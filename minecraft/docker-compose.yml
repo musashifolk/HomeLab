@@ -1,0 +1,24 @@
+services:
+  minecraft:
+    image: itzg/minecraft-server
+    container_name: minecraft
+    ports:
+      - "25565:25565"
+    environment:
+      EULA: "TRUE"
+      MEMORY: "2G"
+      ONLINE_MODE: "FALSE"
+      VERSION: "1.21.1"
+      TYPE: "PAPER"
+      DIFFICULTY: "normal"
+      MAX_PLAYERS: "10"
+      MOTD: "our server"
+    volumes:
+      - ./data:/data
+    restart: unless-stopped
+  playit:
+    image: ghcr.io/playit-cloud/playit-agent:1.0
+    network_mode: host
+    environment:
+      - SECRET_KEY=${PLAYIT_SECRET_KEY}
+    restart: unless-stopped

@@ -4,15 +4,18 @@ A self-hosted homelab built on an old laptop running Debian 13, managed with Doc
 
 ## Stack
 
-| Service | Purpose |
-|---|---|
-| Traefik | Reverse proxy, routes traffic by domain name |
-| Portainer | Docker container management UI |
-| Prometheus + Grafana | Monitoring and metrics dashboard |
-| Node Exporter | Host metrics collector |
-| Pi-hole | Network-wide ad blocker and DNS server |
-| Minecraft (PaperMC) | Self-hosted game server |
-| Playit.gg | Tunnel for external access without port forwarding |
+| Logo | Name | Description |
+|------|------|-------------|
+| 🔀 | [Traefik](https://traefik.io) | Reverse proxy that routes traffic to services by domain name |
+| 🐳 | [Docker](https://docker.com) | Container runtime for all services |
+| 🖥️ | [Portainer](https://portainer.io) | Web UI for managing Docker containers |
+| 📊 | [Prometheus](https://prometheus.io) | Metrics collection and storage |
+| 📈 | [Grafana](https://grafana.com) | Visualization and dashboards for metrics |
+| 📦 | [Node Exporter](https://github.com/prometheus/node_exporter) | Host system metrics collector |
+| 🕳️ | [Pi-hole](https://pi-hole.net) | Network-wide DNS ad blocker |
+| 🟢 | [Uptime Kuma](https://github.com/louislam/uptime-kuma) | Service uptime monitoring dashboard |
+| ⛏️ | [Minecraft (PaperMC)](https://papermc.io) | Self-hosted game server |
+| 🌐 | [Playit.gg](https://playit.gg) | Tunnel for external access without port forwarding |
 
 ## Architecture
 

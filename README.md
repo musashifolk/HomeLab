@@ -6,16 +6,13 @@ A self-hosted homelab built on an old laptop running Debian 13, managed with Doc
 
 | Logo | Name | Description |
 |------|------|-------------|
-| 🔀 | [Traefik](https://traefik.io) | Reverse proxy that routes traffic to services by domain name |
-| 🐳 | [Docker](https://docker.com) | Container runtime for all services |
-| 🖥️ | [Portainer](https://portainer.io) | Web UI for managing Docker containers |
-| 📊 | [Prometheus](https://prometheus.io) | Metrics collection and storage |
-| 📈 | [Grafana](https://grafana.com) | Visualization and dashboards for metrics |
-| 📦 | [Node Exporter](https://github.com/prometheus/node_exporter) | Host system metrics collector |
-| 🕳️ | [Pi-hole](https://pi-hole.net) | Network-wide DNS ad blocker |
-| 🟢 | [Uptime Kuma](https://github.com/louislam/uptime-kuma) | Service uptime monitoring dashboard |
-| ⛏️ | [Minecraft (PaperMC)](https://papermc.io) | Self-hosted game server |
-| 🌐 | [Playit.gg](https://playit.gg) | Tunnel for external access without port forwarding |
+| <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg" width="32"/> | [Docker](https://docker.com) | Container runtime for all services |
+| <img src="https://raw.githubusercontent.com/traefik/traefik/master/docs/content/assets/img/traefik.logo.png" width="32"/> | [Traefik](https://traefik.io) | Reverse proxy that routes traffic by domain name |
+| <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/prometheus/prometheus-original.svg" width="32"/> | [Prometheus](https://prometheus.io) | Metrics collection and storage |
+| <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/grafana/grafana-original.svg" width="32"/> | [Grafana](https://grafana.com) | Visualization and dashboards |
+| <img src="https://raw.githubusercontent.com/pi-hole/AdminLTE/master/img/logo.svg" width="32"/> | [Pi-hole](https://pi-hole.net) | Network-wide DNS ad blocker |
+| <img src="https://raw.githubusercontent.com/louislam/uptime-kuma/master/public/icon.svg" width="32"/> | [Uptime Kuma](https://github.com/louislam/uptime-kuma) | Service uptime monitoring |
+| <img src="https://raw.githubusercontent.com/portainer/portainer/develop/app/assets/images/logo_alt.svg" width="32"/> | [Portainer](https://portainer.io) | Docker container management UI |
 
 ## Architecture
 

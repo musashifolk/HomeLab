@@ -13,6 +13,8 @@ A self-hosted homelab built on an old laptop running Debian 13, managed with Doc
 | <img src="https://raw.githubusercontent.com/pi-hole/AdminLTE/master/img/logo.svg" width="32"/> | [Pi-hole](https://pi-hole.net) | Network-wide DNS ad blocker |
 | <img src="https://raw.githubusercontent.com/louislam/uptime-kuma/master/public/icon.svg" width="32"/> | [Uptime Kuma](https://github.com/louislam/uptime-kuma) | Service uptime monitoring |
 | <img src="https://raw.githubusercontent.com/portainer/portainer/develop/app/assets/images/logo_alt.svg" width="32"/> | [Portainer](https://portainer.io) | Docker container management UI |
+| <img src="https://raw.githubusercontent.com/itzg/docker-minecraft-server/master/docs/img/steve.png" width="32"/> | [PaperMC](https://papermc.io) | Self-hosted Minecraft server |
+| <img src="https://playit.gg/img/logo.svg" width="32"/> | [Playit.gg](https://playit.gg) | Tunnel for external access without port forwarding |
 
 ## Architecture
 

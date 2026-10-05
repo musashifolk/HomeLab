@@ -24,20 +24,6 @@ A self-hosted homelab built on an old laptop running Debian 13, managed with Doc
 - Pi-hole acts as DNS server for all devices on the network
 - Monitoring via Prometheus scraping Node Exporter, visualized in Grafana
 
-## Services
-
-### Traefik
-Reverse proxy that automatically detects Docker containers via labels and routes traffic.
-
-### Prometheus + Grafana
-Full monitoring stack. Grafana dashboard shows real-time CPU, RAM, disk and network usage of the host machine.
-
-### Pi-hole
-Network-wide DNS-based ad blocker. Blocks 76,000+ ad domains out of the box.
-
-### Minecraft Server
-PaperMC 1.21.1 server running in Docker with persistent world data and automatic restarts.
-
 ## Setup Notes
 
 Each service has its own `docker-compose.yml`. Services are connected via a shared Docker network (`traefik_default`) so Traefik can route to all of them.

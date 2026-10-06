@@ -14,6 +14,7 @@ A self-hosted homelab built on an old laptop running Debian 13, managed with Doc
 | <img src="https://raw.githubusercontent.com/louislam/uptime-kuma/master/public/icon.svg" width="32"/> | [Uptime Kuma](https://github.com/louislam/uptime-kuma) | Service uptime monitoring |
 | <img src="https://raw.githubusercontent.com/portainer/portainer/develop/app/assets/images/logo_alt.svg" width="32"/> | [Portainer](https://portainer.io) | Docker container management UI |
 | <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/ansible/ansible-original.svg" width="32"/> | [Ansible](https://ansible.com) | Automates infrastructure setup and configuration |
+| <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/githubactions/githubactions-original.svg" width="32"/> | [GitHub Actions](https://github.com/features/actions) | CI/CD pipeline for automated deployments |
 | <img src="https://raw.githubusercontent.com/itzg/docker-minecraft-server/master/docs/img/steve.png" width="32"/> | [PaperMC](https://papermc.io) | Self-hosted Minecraft server |
 | <img src="https://playit.gg/img/logo.svg" width="32"/> | [Playit.gg](https://playit.gg) | Tunnel for external access without port forwarding |
 

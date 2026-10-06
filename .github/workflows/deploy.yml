@@ -1,0 +1,22 @@
+name: Deploy HomeLab
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  deploy:
+    runs-on: self-hosted
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+
+      - name: Deploy all services
+        run: |
+          cd ~/homelab/traefik && docker compose pull && docker compose up -d
+          cd ~/homelab/portainer && docker compose pull && docker compose up -d
+          cd ~/homelab/monitoring && docker compose pull && docker compose up -d
+          cd ~/homelab/uptime-kuma && docker compose pull && docker compose up -d
+          cd ~/homelab/minecraft && docker compose pull && docker compose up -d
+          cd ~/homelab/pihole && docker compose pull && docker compose up -d

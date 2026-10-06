@@ -14,9 +14,9 @@ jobs:
 
       - name: Deploy all services
         run: |
-          cd ~/homelab/traefik && docker compose pull && docker compose up -d
-          cd ~/homelab/portainer && docker compose pull && docker compose up -d
-          cd ~/homelab/monitoring && docker compose pull && docker compose up -d
-          cd ~/homelab/uptime-kuma && docker compose pull && docker compose up -d
-          cd ~/homelab/minecraft && docker compose pull && docker compose up -d
-          cd ~/homelab/pihole && docker compose pull && docker compose up -d
+          cd /home/nusheen/traefik && docker compose pull && docker compose up -d
+          cd /home/nusheen/portainer && docker compose pull && docker compose up -d
+          cd /home/nusheen/monitoring && docker compose pull && docker compose up -d
+          cd /home/nusheen/uptime-kuma && docker compose pull && docker compose up -d
+          cd /home/nusheen/minecraft && docker compose pull && docker compose up -d
+          cd /home/nusheen/pihole && docker compose pull && docker compose up -d

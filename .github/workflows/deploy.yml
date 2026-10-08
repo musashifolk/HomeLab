@@ -20,3 +20,4 @@ jobs:
           cd /home/nusheen/uptime-kuma && docker compose pull && docker compose up -d
           cd /home/nusheen/minecraft && docker compose pull && docker compose up -d
           cd /home/nusheen/pihole && docker compose pull && docker compose up -d
+          cd /home/nusheen/loki && docker compose pull && docker compose up -d

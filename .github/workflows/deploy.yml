@@ -12,6 +12,17 @@ jobs:
       - name: Checkout repo
         uses: actions/checkout@v4
 
+      - name: Sync service files
+        run: |
+          cp -r $GITHUB_WORKSPACE/traefik/* /home/nusheen/traefik/
+          cp -r $GITHUB_WORKSPACE/portainer/* /home/nusheen/portainer/
+          cp -r $GITHUB_WORKSPACE/monitoring/* /home/nusheen/monitoring/
+          cp -r $GITHUB_WORKSPACE/uptime-kuma/* /home/nusheen/uptime-kuma/
+          cp -r $GITHUB_WORKSPACE/minecraft/* /home/nusheen/minecraft/
+          cp -r $GITHUB_WORKSPACE/pihole/* /home/nusheen/pihole/
+          mkdir -p /home/nusheen/loki
+          cp -r $GITHUB_WORKSPACE/loki/* /home/nusheen/loki/
+
       - name: Deploy all services
         run: |
           cd /home/nusheen/traefik && docker compose pull && docker compose up -d

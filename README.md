@@ -15,6 +15,8 @@ A self-hosted homelab built on an old laptop running Debian 13, managed with Doc
 | <img src="https://raw.githubusercontent.com/portainer/portainer/develop/app/assets/images/logo_alt.svg" width="32"/> | [Portainer](https://portainer.io) | Docker container management UI |
 | <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/ansible/ansible-original.svg" width="32"/> | [Ansible](https://ansible.com) | Automates infrastructure setup and configuration |
 | <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/githubactions/githubactions-original.svg" width="32"/> | [GitHub Actions](https://github.com/features/actions) | CI/CD pipeline for automated deployments |
+| <img src="https://raw.githubusercontent.com/grafana/loki/main/docs/sources/logo.png" width="32"/> | [Loki](https://grafana.com/oss/loki) | Log aggregation for all containers |
+| <img src="https://raw.githubusercontent.com/grafana/loki/main/docs/sources/logo.png" width="32"/> | [Promtail](https://grafana.com/docs/loki/latest/send-data/promtail) | Log shipper that collects Docker container logs |
 | <img src="https://raw.githubusercontent.com/itzg/docker-minecraft-server/master/docs/img/steve.png" width="32"/> | [PaperMC](https://papermc.io) | Self-hosted Minecraft server |
 | <img src="https://playit.gg/img/logo.svg" width="32"/> | [Playit.gg](https://playit.gg) | Tunnel for external access without port forwarding |
 
@@ -24,6 +26,7 @@ A self-hosted homelab built on an old laptop running Debian 13, managed with Doc
 - Traefik handles routing via local domains (portainer.local, grafana.local etc)
 - Pi-hole acts as DNS server for all devices on the network
 - Monitoring via Prometheus scraping Node Exporter, visualized in Grafana
+- Logs aggregated via Promtail → Loki, visualized in Grafana alongside metrics
 
 ## Setup Notes
 

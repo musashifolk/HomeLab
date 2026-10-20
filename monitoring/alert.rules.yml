@@ -1,0 +1,29 @@
+groups:
+  - name: homelab
+    rules:
+      - alert: HostDown
+        expr: up == 0
+        for: 1m
+        labels:
+          severity: critical
+        annotations:
+          summary: "Host {{ $labels.instance }} is down"
+          description: "Prometheus target unreachable for more than 1 minute."
+
+      - alert: DiskUsageHigh
+        expr: (node_filesystem_size_bytes{fstype!="tmpfs"} - node_filesystem_free_bytes{fstype!="tmpfs"}) / node_filesystem_size_bytes{fstype!="tmpfs"} > 0.80
+        for: 5m
+        labels:
+          severity: warning
+        annotations:
+          summary: "Disk above 80% on {{ $labels.instance }}"
+          description: "Filesystem {{ $labels.mountpoint }} is {{ $value | humanizePercentage }} full."
+
+      - alert: HighMemoryUsage
+        expr: (node_memory_MemTotal_bytes - node_memory_MemAvailable_bytes) / node_memory_MemTotal_bytes > 0.85
+        for: 5m
+        labels:
+          severity: warning
+        annotations:
+          summary: "Memory above 85%"
+          description: "RAM is {{ $value | humanizePercentage }} used."

@@ -18,6 +18,7 @@ A self-hosted homelab built on an old laptop running Debian 13, managed with Doc
 | <img src="https://raw.githubusercontent.com/grafana/loki/main/docs/sources/logo.png" width="32"/> | [Loki](https://grafana.com/oss/loki) | Log aggregation for all containers |
 | <img src="https://raw.githubusercontent.com/containrrr/watchtower/main/docs/assets/watchtower-sq180.png" width="32"/> | [Watchtower](https://containrrr.dev/watchtower) | Automatically updates containers when new images are available |
 | <img src="https://raw.githubusercontent.com/aquasecurity/trivy/main/docs/imgs/logo.png" width="32"/> | [Trivy](https://trivy.dev) | Container image vulnerability scanning in CI |
+| <img src="https://raw.githubusercontent.com/prometheus/alertmanager/main/doc/logo.svg" width="32"/> | [Alertmanager](https://prometheus.io/docs/alerting/latest/alertmanager) | Handles alerts from Prometheus and routes them to Discord |
 | <img src="https://raw.githubusercontent.com/grafana/loki/main/docs/sources/logo.png" width="32"/> | [Promtail](https://grafana.com/docs/loki/latest/send-data/promtail) | Log shipper that collects Docker container logs |
 | <img src="https://raw.githubusercontent.com/itzg/docker-minecraft-server/master/docs/img/steve.png" width="32"/> | [PaperMC](https://papermc.io) | Self-hosted Minecraft server |
 | <img src="https://playit.gg/img/logo.svg" width="32"/> | [Playit.gg](https://playit.gg) | Tunnel for external access without port forwarding |

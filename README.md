@@ -30,7 +30,7 @@ A self-hosted homelab built on an old laptop running Debian 13, managed with Doc
 - Pi-hole acts as DNS server for all devices on the network
 - Monitoring via Prometheus scraping Node Exporter, visualized in Grafana
 - Logs aggregated via Promtail → Loki, visualized in Grafana alongside metrics
-- Security scanning via Trivy on every push — blocks deployments with CRITICAL/HIGH CVEs
+- Security scanning via Trivy on every push, blocks deployments with CRITICAL/HIGH CVEs
 
 ## Setup Notes
 

@@ -7,21 +7,21 @@ A self-hosted homelab built on an old laptop running Debian 13, managed with Doc
 | Logo | Name | Description |
 |------|------|-------------|
 | <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg" width="32"/> | [Docker](https://docker.com) | Container runtime for all services |
-| <img src="https://raw.githubusercontent.com/traefik/traefik/master/docs/content/assets/img/traefik.logo.png" width="32"/> | [Traefik](https://traefik.io) | Reverse proxy that routes traffic by domain name |
 | <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/prometheus/prometheus-original.svg" width="32"/> | [Prometheus](https://prometheus.io) | Metrics collection and storage |
 | <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/grafana/grafana-original.svg" width="32"/> | [Grafana](https://grafana.com) | Visualization and dashboards |
-| <img src="https://raw.githubusercontent.com/pi-hole/AdminLTE/master/img/logo.svg" width="32"/> | [Pi-hole](https://pi-hole.net) | Network-wide DNS ad blocker |
-| <img src="https://raw.githubusercontent.com/louislam/uptime-kuma/master/public/icon.svg" width="32"/> | [Uptime Kuma](https://github.com/louislam/uptime-kuma) | Service uptime monitoring |
-| <img src="https://raw.githubusercontent.com/portainer/portainer/develop/app/assets/images/logo_alt.svg" width="32"/> | [Portainer](https://portainer.io) | Docker container management UI |
 | <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/ansible/ansible-original.svg" width="32"/> | [Ansible](https://ansible.com) | Automates infrastructure setup and configuration |
 | <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/githubactions/githubactions-original.svg" width="32"/> | [GitHub Actions](https://github.com/features/actions) | CI/CD pipeline for automated deployments |
-| <img src="https://raw.githubusercontent.com/grafana/loki/main/docs/sources/logo.png" width="32"/> | [Loki](https://grafana.com/oss/loki) | Log aggregation for all containers |
-| <img src="https://raw.githubusercontent.com/containrrr/watchtower/main/docs/assets/watchtower-sq180.png" width="32"/> | [Watchtower](https://containrrr.dev/watchtower) | Automatically updates containers when new images are available |
-| <img src="https://raw.githubusercontent.com/aquasecurity/trivy/main/docs/imgs/logo.png" width="32"/> | [Trivy](https://trivy.dev) | Container image vulnerability scanning in CI |
-| <img src="https://raw.githubusercontent.com/prometheus/alertmanager/main/doc/logo.svg" width="32"/> | [Alertmanager](https://prometheus.io/docs/alerting/latest/alertmanager) | Handles alerts from Prometheus and routes them to Discord |
-| <img src="https://raw.githubusercontent.com/grafana/loki/main/docs/sources/logo.png" width="32"/> | [Promtail](https://grafana.com/docs/loki/latest/send-data/promtail) | Log shipper that collects Docker container logs |
-| <img src="https://raw.githubusercontent.com/itzg/docker-minecraft-server/master/docs/img/steve.png" width="32"/> | [PaperMC](https://papermc.io) | Self-hosted Minecraft server |
-| <img src="https://playit.gg/img/logo.svg" width="32"/> | [Playit.gg](https://playit.gg) | Tunnel for external access without port forwarding |
+| <img src="https://cdn.simpleicons.org/traefikproxy" width="32"/> | [Traefik](https://traefik.io) | Reverse proxy that routes traffic by domain name |
+| <img src="https://cdn.simpleicons.org/loki" width="32"/> | [Loki](https://grafana.com/oss/loki) | Log aggregation for all containers |
+| <img src="https://cdn.simpleicons.org/pihole" width="32"/> | [Pi-hole](https://pi-hole.net) | Network-wide DNS ad blocker |
+| <img src="https://cdn.simpleicons.org/uptimekuma" width="32"/> | [Uptime Kuma](https://github.com/louislam/uptime-kuma) | Service uptime monitoring |
+| <img src="https://cdn.simpleicons.org/portainer" width="32"/> | [Portainer](https://portainer.io) | Docker container management UI |
+| <img src="https://cdn.simpleicons.org/watchtower" width="32"/> | [Watchtower](https://containrrr.dev/watchtower) | Automatically updates containers when new images are available |
+| <img src="https://cdn.simpleicons.org/trivy" width="32"/> | [Trivy](https://trivy.dev) | Container image vulnerability scanning in CI |
+| <img src="https://cdn.simpleicons.org/prometheus" width="32"/> | [Alertmanager](https://prometheus.io/docs/alerting/latest/alertmanager) | Handles alerts from Prometheus and routes them to Discord |
+| <img src="https://cdn.simpleicons.org/grafana" width="32"/> | [Promtail](https://grafana.com/docs/loki/latest/send-data/promtail) | Log shipper that collects Docker container logs |
+| <img src="https://cdn.simpleicons.org/minecraft" width="32"/> | [PaperMC](https://papermc.io) | Self-hosted Minecraft server |
+| <img src="https://cdn.simpleicons.org/playit" width="32"/> | [Playit.gg](https://playit.gg) | Tunnel for external access without port forwarding |
 
 ## Architecture
 
@@ -37,4 +37,3 @@ A self-hosted homelab built on an old laptop running Debian 13, managed with Doc
 Each service has its own `docker-compose.yml`. Services are connected via a shared Docker network (`traefik_default`) so Traefik can route to all of them.
 
 Sensitive values like passwords and API keys are kept in `.env` files (not committed). See `.env.example` for required variables.
-
